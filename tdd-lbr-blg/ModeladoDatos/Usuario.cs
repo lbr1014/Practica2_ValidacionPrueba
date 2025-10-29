@@ -2,17 +2,24 @@
 {
     public class Usuario
     {
-        private int idUsuario;
-        private string v1;
-        private string v2;
-        private string v3;
+        private int id;
+        private string nombre;
+        private string apellidos;
+        private string email;
+        private string password;
 
-        public Usuario(int idUsuario, string v1, string v2, string v3)
+        public Usuario(int id, string nombre, string apellidos, string email, string password)
         {
-            this.idUsuario = idUsuario;
-            this.v1 = v1;
-            this.v2 = v2;
-            this.v3 = v3;
+            this.Id = id;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.email = email;
+            this.password = password;
         }
+
+        public string Nombre { get; set; }
+        public string Apellidos { get; set; }
+        public string DireccionPostal { get; set; }
+        public int Id { get => id; set => id = value; }
     }
 }

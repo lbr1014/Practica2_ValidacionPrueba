@@ -50,3 +50,24 @@ using System.Windows;
 //
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+namespace ModeladoDatos
+{
+    public class Usuario
+    {
+        private int id;
+        private string nombre;
+        private string apellidos;
+        private string email;
+        private string password;
+
+        public Usuario(int id, string nombre, string apellidos, string email, string password)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.apellidos = apellidos;
+            this.email = email;
+            this.password = password;
+        }
+    }
+}

@@ -1,27 +1,58 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ModeladoDatos;
+using ModeloDatos;
 using System;
 
 namespace ModeloDatosTest
 {
-    [TestClass]
+    
+[TestClass]
     public class UsuarioTest
     {
-        [TestMethod]
-        public void TestMethod1()
+        int id = 0;
+        string nombre = "Lydia";
+        string apellidos = "Blanco Ruiz";
+        string direccionPostal = "C/ COndesa Mencia 120";
+        string email = "lbr1014@alu.ubu.es";
+        string password = "ConMasDe12Caracteres!";
+        DateTime hoy = DateTime.Now;
+        Usuario u = null;
+
+        [TestInitialize]
+        public void InicializaTest()
         {
-            int idUsuario = 1;
-            string nombre = "Lydia";
-            string email = "lbr1014@alu.ubu.es";
-            string password = "ConMasDe12Caracteres!";
-            Usuario u = new Usuario(idUsuario, nombre, email, password);
+            u = new Usuario(id, nombre, apellidos, email, password);
 
-            Assert.Equals(u.idUsuario, idUsuario);
+        }
+        [TestMethod]
+        public void Constructor()
+        {
+            
+            Assert.IsNotNull(u);
+            Assert.AreEqual(id, u.Id);
+            Assert.AreEqual(nombre, u.Nombre);
+            Assert.AreEqual(apellidos, u.Apellidos);
+            Assert.AreEqual(direccionPostal, u.DireccionPostal);
+            Assert.AreEqual(email, u.email);
+            Assert.IsTrue(u.CuentaActiva);
+            Assert.IsTrue(u.ComprobarContraseña(password));
+            Assert.AreEqual(DateTime.MinValue, u.UltimoAceso);
 
-            Assert.IsFalse(u.ComprobarContraseña("password"));
+            //Comprobamos las fechas
+            Assert.AreEqual(hoy.AddDays(365), u.FechaCaducidadCuenta);
+            Assert.AreEqual(hoy.AddDays(365), u.FechaCaducidadContraseña);
+
+
+
             Assert.IsTrue(u.ComprobarContraseña("ConMasDe12Caracteres!"));
-
             Assert.IsFalse(u.CambiarContraseña("anterior", "mueva"));
         }
+
+        [TestMethod]
+        public void GetYSetTest()
+        {
+            u.Id = 33;
+            Assert.AreEqual(33, u.Id);
+        }
+
     }
 }
