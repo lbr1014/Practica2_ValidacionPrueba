@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 namespace ModeloDatosTest
 {
     
-[TestClass]
+    [TestClass]
     public class UsuarioTest
     {
         int id = 0;
@@ -126,7 +126,7 @@ namespace ModeloDatosTest
         }
 
         [TestMethod]
-        [DynamicData(nameof(ObtenerContraseñaDesdeJson))]
+        [DynamicData(nameof(ObtenerContraseñaDesdeJson), DynamicDataSourceType.Method)]
         public void ContraseñaTest(string contraseña, bool esperado)
         {
             bool ok = u.ValidarContraseña(contraseña);
