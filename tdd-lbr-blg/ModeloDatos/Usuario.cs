@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ModeloDatos
 {
@@ -78,7 +79,32 @@ namespace ModeloDatos
 
             return contadorMayusculas >= 2 && contadorMinusculas >= 2 && contadorNumeros >= 1 && contadorCaracteresEspeciales >= 1;
         }
+        
+        public void CaducarCuenta()
+        {
 
+        }
+        public void CaducarContraseña()
+        {
+
+        }
+        public void ReactivarCuenta(int dias)
+        {
+
+        }
+        public void CambiarContraseña(String contraseñaNueva)
+        {
+
+        }
+        public bool CuentaActiva(Usuario usuario)
+        {
+            return false;
+        }
+
+        public bool comprobarContraseña(String contraseña)
+        {
+            return true;
+        }
 
         /* GETS Y SETS */
         public int Id { 
@@ -125,6 +151,59 @@ namespace ModeloDatos
         public bool Estado {
             get { return this.estado; }
             set { this.estado = value; }
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Usuario usuario &&
+                   id == usuario.id &&
+                   nombre == usuario.nombre &&
+                   apellidos == usuario.apellidos &&
+                   direccion == usuario.direccion &&
+                   codigoPostal == usuario.codigoPostal &&
+                   email == usuario.email &&
+                   contraseña == usuario.contraseña &&
+                   fechaCaducidadCuenta == usuario.fechaCaducidadCuenta &&
+                   fechaCaducidadContraseña == usuario.fechaCaducidadContraseña &&
+                   ultimoAcceso == usuario.ultimoAcceso &&
+                   estado == usuario.estado &&
+                   Id == usuario.Id &&
+                   Nombre == usuario.Nombre &&
+                   Apellidos == usuario.Apellidos &&
+                   Direccion == usuario.Direccion &&
+                   CodigoPostal == usuario.CodigoPostal &&
+                   Email == usuario.Email &&
+                   FechaCaducidadCuenta == usuario.FechaCaducidadCuenta &&
+                   FechaCaducidadContraseña == usuario.FechaCaducidadContraseña &&
+                   UltimoAcceso == usuario.UltimoAcceso &&
+                   Estado == usuario.Estado;
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = 1509075510;
+            hashCode = hashCode * -1521134295 + id.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(nombre);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(apellidos);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(direccion);
+            hashCode = hashCode * -1521134295 + codigoPostal.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(email);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(contraseña);
+            hashCode = hashCode * -1521134295 + fechaCaducidadCuenta.GetHashCode();
+            hashCode = hashCode * -1521134295 + fechaCaducidadContraseña.GetHashCode();
+            hashCode = hashCode * -1521134295 + ultimoAcceso.GetHashCode();
+            hashCode = hashCode * -1521134295 + estado.GetHashCode();
+            hashCode = hashCode * -1521134295 + Id.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Nombre);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Apellidos);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Direccion);
+            hashCode = hashCode * -1521134295 + CodigoPostal.GetHashCode();
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Email);
+            hashCode = hashCode * -1521134295 + FechaCaducidadCuenta.GetHashCode();
+            hashCode = hashCode * -1521134295 + FechaCaducidadContraseña.GetHashCode();
+            hashCode = hashCode * -1521134295 + UltimoAcceso.GetHashCode();
+            hashCode = hashCode * -1521134295 + Estado.GetHashCode();
+            return hashCode;
         }
     }
 }
