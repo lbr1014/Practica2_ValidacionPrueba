@@ -1,6 +1,6 @@
 [
   {
-    "contraseña": "Contrase�aCorrecta1",
+    "contraseña": "ContrasenaCorrecta1",
     "correcto": 1
   },
   {
@@ -20,7 +20,7 @@
     "correcto": 0
   },
   {
-    "contraseña": "CONTRASE�ASINMINUSCULAS1!",
+    "contraseña": "CONTRASENASINMINUSCULAS1!",
     "correcto": 0
   },
   {
