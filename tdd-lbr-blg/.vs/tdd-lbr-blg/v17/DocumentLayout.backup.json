@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88913301-19C6-420D-BAC9-4B47AECA1798}|ModeladoDatos\\ModeloDatos.csproj|c:\\users\\lydia\\desktop\\cosasejecutar\\validacionpruebas\\practica2\\tdd-lbr-blg\\modeladodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88913301-19C6-420D-BAC9-4B47AECA1798}|ModeladoDatos\\ModeloDatos.csproj|solutionrelative:modeladodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -27,25 +23,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeladoDatos\\Usuario.cs",
-              "RelativeDocumentMoniker": "ModeladoDatos\\Usuario.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeladoDatos\\Usuario.cs*",
-              "RelativeToolTip": "ModeladoDatos\\Usuario.cs*",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T16:45:29.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "UsuarioTest.cs",
               "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs",
               "RelativeDocumentMoniker": "ModeloDatosTest\\UsuarioTest.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs*",
-              "RelativeToolTip": "ModeloDatosTest\\UsuarioTest.cs*",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCUAAAA8AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs",
+              "RelativeToolTip": "ModeloDatosTest\\UsuarioTest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T16:41:12.788Z",
               "EditorCaption": ""
