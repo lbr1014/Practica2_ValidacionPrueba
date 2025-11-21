@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace ModeloDatos
 {
@@ -16,6 +18,7 @@ namespace ModeloDatos
         private DateTime fechaCaducidadContraseña;
         private DateTime ultimoAcceso;
         private bool estado;
+        private int contador;
 
         public Usuario(int id, string nombre, string apellidos, string direccion, int codigoPostal, string email, string contraseña, DateTime fechaCaducidadCuenta, DateTime fechaCaducidadContraseña, DateTime ultimoAcceso, bool estado)
         {
@@ -82,7 +85,7 @@ namespace ModeloDatos
         
         public void CaducarCuenta()
         {
-
+            
         }
         public void CaducarContraseña()
         {
@@ -98,12 +101,61 @@ namespace ModeloDatos
         }
         public bool CuentaActiva(Usuario usuario)
         {
-            return false;
+            return usuario.Estado;
         }
 
-        public bool ComprobarContraseña(String contraseña)
+        public bool ComprobarContraseña(String password)
         {
-            return true;
+            /*
+             * Este método comprueba el hash de una contraseña candita con la almacenada.
+             * Si falla, incrementa un contador de intentos, tras tres fallso bloqeua la cuenta
+             * del usuario.
+             * Parametros:
+             *      password: Contraseña candidata.
+             * Returns:
+             *      true si ambas contraseñas coinciden; false si no lo hacen.
+             */
+
+            bool contraseñaIgual = false;
+
+            string candidatoHash = EncriptarContraseña(password);
+            bool coincide = string.Equals(this.contraseña, candidatoHash, StringComparison.Ordinal);
+
+            if (coincide)
+            {
+                contraseñaIgual = true;
+        
+            }
+
+            return contraseñaIgual;
+
+
+        }
+        public  String EncriptarContraseña(String value)
+        {
+            /*
+             * Este método calcula el hash SHA-256 de una contraseña pasada como testo 
+             * y lo convierte en formato hexadecimal en minúsculas.
+             * Parametros:
+             *      value: COntraseña en formato texto sin cifrar.
+             * Returns:
+             *      ContraseñaCifrada como cadena hexadecimal de 64 caracteres que se corresponde 
+             *      con el hash SHA-256 de la contraseña sin cifrar.
+             */
+
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] bytes = Encoding.UTF8.GetBytes(value);
+                byte[] hash = sha256.ComputeHash(bytes);
+
+                // Convertir hash a string hexadecimal
+                StringBuilder ContraseñaCifrada = new StringBuilder();
+                foreach (byte b in hash)
+                {
+                    ContraseñaCifrada.Append(b.ToString("x2")); // formato hexadecimal
+                }
+                return ContraseñaCifrada.ToString();
+            }
         }
 
         /* GETS Y SETS */

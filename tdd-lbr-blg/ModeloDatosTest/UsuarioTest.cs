@@ -215,6 +215,16 @@ namespace ModeloDatosTest
 
         }
 
+        [TestMethod()]
+        public void EncriptarContraseñaTest()
+        {
+            string contraseñaSinCifrar = "ContraseñaCorrecta1!";
+            string contraseñaCifrada = u.EncriptarContraseña(contraseñaSinCifrar);
+
+
+            Assert.AreNotEqual(contraseñaSinCifrar, contraseñaCifrada);
+
+        }
 
         [TestMethod()]
         public void EqualsTest()
