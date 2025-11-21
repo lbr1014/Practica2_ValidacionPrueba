@@ -1,0 +1,30 @@
+[
+  {
+    "contrase�a": "Contrase�aCorrecta1",
+    "correcto": 1
+  },
+  {
+    "contrase�a": " ",
+    "correcto": 0
+  },
+  {
+    "contrase�a": "aaAA1!",
+    "correcto": 0
+  },
+  {
+    "contrase�a": "ContrasenaSinNumeros!",
+    "correcto": 0
+  },
+  {
+    "contrase�a": "Contrasenasinmayusculas1!",
+    "correcto": 0
+  },
+  {
+    "contrase�a": "CONTRASE�ASINMINUSCULAS1!",
+    "correcto": 0
+  },
+  {
+    "contrase�a": "ContrasenaSinCaracteresEspeciales1",
+    "correcto": 0
+  }
+]
