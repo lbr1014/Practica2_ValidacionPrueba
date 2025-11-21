@@ -89,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <Content Include="contraseña.json">
+    <Content Include="utils\contraseña.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="packages.config" />
