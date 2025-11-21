@@ -109,7 +109,11 @@ namespace ModeloDatosTest
             if (!File.Exists(filePath))
                 Assert.Inconclusive($"No se encontró el archivo de datos: {filePath}");
 
-            string json = File.ReadAllText(filePath);
+            
+
+            string json = File.ReadAllText(filePath, System.Text.Encoding.UTF8);
+         
+
             JsonArray data = JsonNode.Parse(json).AsArray();
 
             foreach (var item in data)
