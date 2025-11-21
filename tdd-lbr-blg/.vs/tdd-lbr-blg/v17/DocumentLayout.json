@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|solutionrelative:modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatostest\\utils\\contrase\u00F1a.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\modelodatostest\\utils\\contrase\u00F1a.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\utils\\contrase\u00F1a.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,26 +34,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "contrase\u00F1a.json",
-              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\utils\\contrase\u00F1a.json",
-              "RelativeDocumentMoniker": "ModeloDatosTest\\utils\\contrase\u00F1a.json",
-              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\utils\\contrase\u00F1a.json",
-              "RelativeToolTip": "ModeloDatosTest\\utils\\contrase\u00F1a.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-21T14:54:20.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UsuarioTest.cs",
               "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs",
               "RelativeDocumentMoniker": "ModeloDatosTest\\UsuarioTest.cs",
               "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs",
               "RelativeToolTip": "ModeloDatosTest\\UsuarioTest.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAkwAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAArwKkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T16:41:12.788Z",
               "EditorCaption": ""
@@ -66,9 +53,22 @@
               "RelativeDocumentMoniker": "ModeloDatos\\Usuario.cs",
               "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Usuario.cs",
               "RelativeToolTip": "ModeloDatos\\Usuario.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAuwFUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwHMAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T13:53:04.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "contrase\u00F1a.json",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "RelativeDocumentMoniker": "ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "RelativeToolTip": "ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T14:54:20.703Z",
               "EditorCaption": ""
             }
           ]

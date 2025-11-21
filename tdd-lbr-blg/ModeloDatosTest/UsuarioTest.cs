@@ -198,11 +198,11 @@ namespace ModeloDatosTest
         [TestMethod]
         public void CuentaActivaTest()
         {
-            Assert.IsTrue(u.Estado);
+            Assert.IsTrue(u.CuentaActiva(u));
 
             u.Estado = false;
 
-            Assert.IsFalse(u.Estado);
+            Assert.IsFalse(u.CuentaActiva(u));
         }
 
         [TestMethod]

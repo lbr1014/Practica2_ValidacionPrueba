@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
@@ -28,7 +29,7 @@ namespace ModeloDatos
             this.direccion = direccion;
             this.codigoPostal = codigoPostal;
             this.email = email;
-            this.contraseña = contraseña;
+            this.contraseña = EncriptarContraseña(contraseña);
             this.fechaCaducidadCuenta = fechaCaducidadCuenta;
             this.fechaCaducidadContraseña = fechaCaducidadContraseña;
             this.ultimoAcceso = ultimoAcceso;
@@ -85,19 +86,35 @@ namespace ModeloDatos
         
         public void CaducarCuenta()
         {
-            
+            if (fechaCaducidadCuenta <= DateTime.Today)
+            {
+                estado = false;
+            }
+
         }
         public void CaducarContraseña()
         {
-
+            if (fechaCaducidadCuenta <= DateTime.Today)
+            {
+                estado = false;
+                contraseña = "";
+               
+            }
         }
         public void ReactivarCuenta(int dias)
         {
-
+            estado = true;
+            fechaCaducidadCuenta.AddDays(dias);
         }
         public void CambiarContraseña(String contraseñaNueva)
         {
-
+            if (estado == false)
+            {
+                estado = true;
+            }
+            string contraseñaNuevaEncriptada= EncriptarContraseña(contraseñaNueva);
+            contraseña = contraseñaNuevaEncriptada;
+           
         }
         public bool CuentaActiva(Usuario usuario)
         {
