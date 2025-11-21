@@ -19,7 +19,6 @@ namespace ModeloDatos
         private DateTime fechaCaducidadContraseña;
         private DateTime ultimoAcceso;
         private bool estado;
-        private int contador;
 
         public Usuario(int id, string nombre, string apellidos, string direccion, int codigoPostal, string email, string contraseña, DateTime fechaCaducidadCuenta, DateTime fechaCaducidadContraseña, DateTime ultimoAcceso, bool estado)
         {
