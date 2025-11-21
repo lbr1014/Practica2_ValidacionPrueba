@@ -98,13 +98,13 @@ namespace ModeloDatos
             {
                 estado = false;
                 contraseña = "";
-               
+                contraseña=EncriptarContraseña(contraseña);
             }
         }
         public void ReactivarCuenta(int dias)
         {
             estado = true;
-            fechaCaducidadCuenta.AddDays(dias);
+            fechaCaducidadCuenta =fechaCaducidadCuenta.AddDays(dias);
         }
         public void CambiarContraseña(String contraseñaNueva)
         {

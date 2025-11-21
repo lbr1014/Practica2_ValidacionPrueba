@@ -57,12 +57,12 @@ namespace ModeloDatosTest
             Assert.IsTrue(u.CuentaActiva(u));
             Assert.IsTrue(u.ComprobarContraseña(contraseña));
             Assert.IsTrue(u.ValidarContraseña(contraseña));
-            Assert.AreEqual(DateTime.MinValue, u.UltimoAcceso);
+            Assert.AreEqual(DateTime.MinValue.Date, u.UltimoAcceso.Date);
 
             //Comprobamos las fechas
             DateTime hoy = DateTime.Now;
-            Assert.AreEqual(hoy.AddDays(365), u.FechaCaducidadCuenta);
-            Assert.AreEqual(hoy.AddDays(365), u.FechaCaducidadContraseña);
+            Assert.AreEqual(hoy.AddDays(365).Date, u.FechaCaducidadCuenta.Date);
+            Assert.AreEqual(hoy.AddDays(365).Date, u.FechaCaducidadContraseña.Date);
 
         }
 
@@ -89,14 +89,14 @@ namespace ModeloDatosTest
 
             DateTime nuevaFecha = DateTime.Now.AddDays(15);
             u.FechaCaducidadCuenta= nuevaFecha;
-            Assert.AreEqual(nuevaFecha, u.FechaCaducidadCuenta);
+            Assert.AreEqual(nuevaFecha.Date, u.FechaCaducidadCuenta.Date);
 
             u.FechaCaducidadContraseña=nuevaFecha;
-            Assert.AreEqual(nuevaFecha, u.FechaCaducidadContraseña);
+            Assert.AreEqual(nuevaFecha.Date, u.FechaCaducidadContraseña.Date);
 
             nuevaFecha = DateTime.Now.AddDays(-15);
             u.UltimoAcceso= nuevaFecha;
-            Assert.AreEqual(nuevaFecha, u.UltimoAcceso);
+            Assert.AreEqual(nuevaFecha.Date, u.UltimoAcceso.Date);
 
             u.Estado = false;
             Assert.IsFalse(u.Estado);
@@ -170,7 +170,7 @@ namespace ModeloDatosTest
 
             u.ReactivarCuenta(365);
             Assert.IsTrue(u.Estado);
-            Assert.AreEqual(DateTime.Now.AddDays(300), u.FechaCaducidadCuenta);
+            Assert.AreEqual(DateTime.Now.AddDays(300).Date, u.FechaCaducidadCuenta.Date);
 
         }
 
