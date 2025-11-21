@@ -54,10 +54,10 @@ namespace ModeloDatosTest
             Assert.AreEqual(ultimoAcceso, u.UltimoAcceso);
             Assert.AreEqual(estado, u.Estado);
 
-            Assert.IsTrue(u.CuentaActiva);
+            Assert.IsTrue(u.CuentaActiva(u));
             Assert.IsTrue(u.ComprobarContraseña(contraseña));
             Assert.IsTrue(u.ValidarContraseña(contraseña));
-            Assert.AreEqual(DateTime.MinValue, u.UltimoAceso);
+            Assert.AreEqual(DateTime.MinValue, u.UltimoAcceso);
 
             //Comprobamos las fechas
             DateTime hoy = DateTime.Now;
@@ -152,7 +152,7 @@ namespace ModeloDatosTest
             u.CaducarContraseña();
 
             Assert.IsFalse(u.Estado);
-            Assert.IsTrue(u.comprobarContraseña(""));
+            Assert.IsTrue(u.ComprobarContraseña(""));
         }
 
         [TestMethod]
@@ -182,12 +182,12 @@ namespace ModeloDatosTest
             u.FechaCaducidadCuenta = fechaCaducar;
             u.CaducarContraseña();
             Assert.IsFalse(u.Estado);
-            Assert.IsTrue(u.comprobarContraseña(""));
+            Assert.IsTrue(u.ComprobarContraseña(""));
 
             u.CambiarContraseña("OtraContraseñaNueva22!");
             Assert.IsTrue(u.Estado);
-            Assert.IsFalse(u.comprobarContraseña(""));
-            Assert.IsTrue(u.comprobarContraseña("OtraContraseñaNueva22!"));
+            Assert.IsFalse(u.ComprobarContraseña(""));
+            Assert.IsTrue(u.ComprobarContraseña("OtraContraseñaNueva22!"));
 
         }
 

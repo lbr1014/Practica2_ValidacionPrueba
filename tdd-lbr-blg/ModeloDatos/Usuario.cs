@@ -101,7 +101,7 @@ namespace ModeloDatos
             return false;
         }
 
-        public bool comprobarContraseña(String contraseña)
+        public bool ComprobarContraseña(String contraseña)
         {
             return true;
         }
