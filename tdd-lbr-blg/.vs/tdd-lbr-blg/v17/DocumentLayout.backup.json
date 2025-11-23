@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\",
+  "WorkspaceRootPath": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|c:\\users\\lydia\\desktop\\cosasejecutar\\validacionpruebas\\practica2\\tdd-lbr-blg\\modelodatos\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatostest\\proyectotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\proyectotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatos\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|solutionrelative:modelodatos\\proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatos\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|solutionrelative:modelodatos\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|c:\\users\\lydia\\desktop\\cosasejecutar\\validacionpruebas\\practica2\\tdd-lbr-blg\\modelodatostest\\roltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|solutionrelative:modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|c:\\users\\bea\\desktop\\uni\\4\u00BA\\1\u00BAcuatri\\validacionypruebas\\practicas\\prac2\\tdd-lbr-blg\\modelodatostest\\roltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\roltest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|c:\\users\\lydia\\desktop\\cosasejecutar\\validacionpruebas\\practica2\\tdd-lbr-blg\\modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4739DAAB-E21B-4854-A52F-0EA93FFFC82E}|ModeloDatos\\ModeloDatos.csproj|solutionrelative:modelodatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\usuariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\modelodatostest\\utils\\contrase\u00F1a.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{616566D6-AA3E-40CE-9014-AFE1E5AF85D9}|ModeloDatosTest\\ModeloDatosTest.csproj|solutionrelative:modelodatostest\\utils\\contrase\u00F1a.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,50 +38,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{320fd13f-632f-4b16-9527-a1adfe555f6c}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatos\\Usuario.cs",
-              "RelativeDocumentMoniker": "ModeloDatos\\Usuario.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatos\\Usuario.cs",
-              "RelativeToolTip": "ModeloDatos\\Usuario.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAIwLMAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Proyecto.cs",
+              "RelativeDocumentMoniker": "ModeloDatos\\Proyecto.cs",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Proyecto.cs",
+              "RelativeToolTip": "ModeloDatos\\Proyecto.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:37:51.122Z",
+              "WhenOpened": "2025-11-23T23:19:16.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatos\\Rol.cs",
-              "RelativeDocumentMoniker": "ModeloDatos\\Rol.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatos\\Rol.cs",
-              "RelativeToolTip": "ModeloDatos\\Rol.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAIwAQAAAASAAAAAAAAAA==",
+              "Title": "ProyectoTest.cs",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\ProyectoTest.cs",
+              "RelativeDocumentMoniker": "ModeloDatosTest\\ProyectoTest.cs",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\ProyectoTest.cs",
+              "RelativeToolTip": "ModeloDatosTest\\ProyectoTest.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwDcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T23:28:33.62Z",
+              "WhenOpened": "2025-11-23T23:07:49.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RolTest.cs",
-              "DocumentMoniker": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatosTest\\RolTest.cs",
-              "RelativeDocumentMoniker": "ModeloDatosTest\\RolTest.cs",
-              "ToolTip": "C:\\Users\\lydia\\Desktop\\CosasEjecutar\\validacionPruebas\\Practica2\\tdd-lbr-blg\\ModeloDatosTest\\RolTest.cs",
-              "RelativeToolTip": "ModeloDatosTest\\RolTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Rol.cs",
+              "RelativeDocumentMoniker": "ModeloDatos\\Rol.cs",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Rol.cs",
+              "RelativeToolTip": "ModeloDatos\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T22:35:25.44Z",
+              "WhenOpened": "2025-11-23T22:39:58.964Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RolTest.cs",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\RolTest.cs",
+              "RelativeDocumentMoniker": "ModeloDatosTest\\RolTest.cs",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\RolTest.cs",
+              "RelativeToolTip": "ModeloDatosTest\\RolTest.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T22:26:13.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioTest.cs",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs",
+              "RelativeDocumentMoniker": "ModeloDatosTest\\UsuarioTest.cs",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\UsuarioTest.cs",
+              "RelativeToolTip": "ModeloDatosTest\\UsuarioTest.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:41:12.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Usuario.cs",
+              "RelativeDocumentMoniker": "ModeloDatos\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatos\\Usuario.cs",
+              "RelativeToolTip": "ModeloDatos\\Usuario.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAA2wLgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T13:53:04.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "contrase\u00F1a.json",
+              "DocumentMoniker": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "RelativeDocumentMoniker": "ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "ToolTip": "C:\\Users\\Bea\\Desktop\\uni\\4\u00BA\\1\u00BACuatri\\ValidacionYPruebas\\Practicas\\Prac2\\tdd-lbr-blg\\ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "RelativeToolTip": "ModeloDatosTest\\utils\\contrase\u00F1a.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-21T14:54:20.703Z"
             }
           ]
         }
