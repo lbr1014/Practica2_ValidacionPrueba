@@ -13,7 +13,7 @@ namespace ModeloDatosTest
     {
         int id = 0;
         string nombre = "administrador"; 
-        string descripcion = "rol administrativo";
+        string descripcion = "rol administrador de la aplicacón";
         bool edicionPlanDePruebas = true;
         bool ejecucionPlanDePrueba = true;
         bool ejecucionCasosPruebas = true;
