@@ -20,7 +20,7 @@ namespace ModeloDatosTest
         List<Rol> roles = null;
 
         Dictionary<Usuario, List<Proyecto>> usuariosYSusProyectos = null;
-        Dictionary<List<Proyecto>,List<Rol> > proyectosYSusRoles = null;
+        Dictionary<List<Proyecto>, List<Rol>> proyectosYSusRoles = null;
 
         App app = null;
         App app2 = null;
@@ -36,17 +36,17 @@ namespace ModeloDatosTest
         public void InicializaTest()
         {
             usuario = new Usuario(1, "Andrea", "Medina Martín", "C/ Alcalá de Enares", 28805, "andreMedina@gmail.com", "ConMasDe12Caracteres!", DateTime.Now.AddDays(365), DateTime.Now.AddDays(365), DateTime.MinValue, true);
-            
+
             p1 = new Proyecto(1, "Valkiria", "Proyecto Valkiria: Aplicacion que registra actividades fisicas.");
             p2 = new Proyecto(1, "Nombre", "Proyecto de prueba");
             proyectos.Add(p1);
             proyectos.Add(p2);
-            
+
             r1 = new Rol(1, "administrador", "rol administrador de la aplicacón", true, true, true, true, true);
             r2 = new Rol(1, "tester", "rol encargado de realizar las pruebas", true, true, true, false, false);
             roles.Add(r1);
             roles.Add(r2);
-            
+
             app = new App(id, nombre, usuario);
             app2 = new App(id, nombre, usuario);
             app3 = new App(15, "nombre", usuario);
@@ -92,10 +92,10 @@ namespace ModeloDatosTest
         {
             Assert.AreEqual(0, app.ProyectosYSusRoles(p1));
 
-            app.agregarRolProyecto(p1,r1);
+            app.agregarRolProyecto(p1, r1);
             Assert.AreEqual(1, app.ProyectosYSusRoles(p1));
 
-            app.agregarRolProyecto(p1,r1);
+            app.agregarRolProyecto(p1, r1);
             Assert.AreEqual(1, app.ProyectosYSusRoles(p1));
 
             app.agregarRolProyecto(p2, r1);
@@ -226,3 +226,4 @@ namespace ModeloDatosTest
 
 
     }
+}
