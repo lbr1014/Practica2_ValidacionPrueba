@@ -20,7 +20,7 @@ namespace ModeloDatosTest
         List<Rol> roles = null;
 
         Dictionary<Usuario, List<Proyecto>> usuariosYSusProyectos = null;
-        Dictionary<List<Proyecto>, List<Rol>> proyectosYSusRoles = null;
+        Dictionary<List<Proyecto>, List<Rol>> proyectosSusRoles = null;
 
         App app = null;
         App app2 = null;
@@ -36,6 +36,11 @@ namespace ModeloDatosTest
         public void InicializaTest()
         {
             usuario = new Usuario(1, "Andrea", "Medina Martín", "C/ Alcalá de Enares", 28805, "andreMedina@gmail.com", "ConMasDe12Caracteres!", DateTime.Now.AddDays(365), DateTime.Now.AddDays(365), DateTime.MinValue, true);
+
+            proyectos = new List<Proyecto>();
+            roles = new List<Rol>();
+            usuariosYSusProyectos = new Dictionary<Usuario, List<Proyecto>>();
+            proyectosSusRoles = new Dictionary<List<Proyecto>, List<Rol>>();
 
             p1 = new Proyecto(1, "Valkiria", "Proyecto Valkiria: Aplicacion que registra actividades fisicas.");
             p2 = new Proyecto(1, "Nombre", "Proyecto de prueba");
@@ -58,23 +63,56 @@ namespace ModeloDatosTest
         {
             Assert.IsNotNull(app);
 
-            // Sin particiones iniciales
+            
             Assert.AreEqual(0, app.Proyectos.Count);
             Assert.AreEqual(0, app.Roles.Count);
             Assert.AreEqual(0, app.UsuariosYSusProyectos.Count);
-            Assert.AreEqual(0, app.ProyectosYSusRoles.Count);
+            Assert.AreEqual(0, app.ProyectosSusRoles.Count);
 
             Assert.AreEqual(id, app.Id);
             Assert.AreEqual(nombre, app.Nombre);
             Assert.AreEqual(usuario, app.Usuario);
-            Assert.AreEqual(proyectos, app.Proyectos);
-            Assert.AreEqual(roles, app.Roles);
-            Assert.AreEqual(usuariosYSusProyectos, app.UsuariosYSusProyectos);
-            Assert.AreEqual(proyectosYSusRoles, app.ProyectosYSusRoles);
+            CollectionAssert.AreEqual(new List<Proyecto>(), app.Proyectos);
+            CollectionAssert.AreEqual(new List<Rol>(), app.Roles);
+            CollectionAssert.AreEqual(new Dictionary<Usuario, List<Proyecto>>(),app.UsuariosYSusProyectos);
+            CollectionAssert.AreEqual(new Dictionary<List<Proyecto>, List<Rol>>(), app.ProyectosSusRoles);
 
             Assert.IsNotNull(app.Usuario);
 
 
+        }
+
+        [TestMethod]
+        public void GetYset()
+        {
+            app.Id = 33;
+            Assert.AreEqual(33, app.Id);
+
+            app.Nombre = "Tester";
+            Assert.AreEqual("Tester", app.Nombre);
+
+            Usuario u3 = new Usuario(1, "Fernando", "Alonso", "Asturias", 33001, "la33@gmail.com", "ConMasDe12Caracteres!", DateTime.Now.AddDays(365), DateTime.Now.AddDays(365), DateTime.MinValue, true);
+
+            app.Usuario = u3;
+            Assert.AreEqual(u3, app.Usuario);
+
+            List<Proyecto> proyectos4 = null;
+            app.Proyectos = proyectos4;
+            Assert.AreEqual(proyectos4, app.Proyectos);
+
+            List<Rol> roles4 = null;
+            app.Roles = roles4;
+            Assert.AreEqual(roles4, app.Roles);
+
+            Dictionary<Usuario, List<Proyecto>> usuariosYSusProyectos4 = null;
+            app.UsuariosYSusProyectos = usuariosYSusProyectos4;
+            Assert.AreEqual(usuariosYSusProyectos4, app.UsuariosYSusProyectos);
+
+            Dictionary<List<Proyecto>, List<Rol>> proyectosSusRoles4 = null;
+            app.ProyectosSusRoles = proyectosSusRoles4;
+            Assert.AreEqual(proyectosSusRoles4, app.ProyectosSusRoles);
+
+            
         }
 
         [TestMethod]
@@ -126,7 +164,7 @@ namespace ModeloDatosTest
         {
             Assert.IsNotNull(app);
 
-            Assert.IsNull(app.Proyectos);
+            
             app.agregarProyecto(p1);
             Assert.IsNotNull(app.Proyectos);
 
@@ -147,7 +185,7 @@ namespace ModeloDatosTest
         {
             Assert.IsNotNull(app);
 
-            Assert.IsNull(app.Proyectos);
+            
             app.agregarProyecto(p1);
             app.agregarProyecto(p2);
             Assert.IsNotNull(app.Proyectos);
@@ -155,7 +193,7 @@ namespace ModeloDatosTest
             Assert.AreEqual(0, app.ProyectosYSusRoles(p1));
             app.agregarRolProyecto(p1, r1);
             app.agregarRolProyecto(p1, r2);
-            Assert.AreEqual(1, app.ProyectosYSusRoles(p1));
+            Assert.AreEqual(2, app.ProyectosYSusRoles(p1));
 
             List<String> permisos = app.PermisosUsuarioProyecto(usuario, p1);
             var contar = permisos.Count;
@@ -175,7 +213,7 @@ namespace ModeloDatosTest
             app.agregarProyecto(p2);
             app.agregarRolProyecto(p1, r1);
             app.agregarRolProyecto(p2, r2);
-            string cadena = "Usuario: " + usuario.Nombre + "" + usuario.Apellidos + "\n" + "Proyectos: \n" + p1.Nombre + ": " + r1.Nombre + "\n" + p2.Nombre + ": " + r2.Nombre;
+            string cadena = "Usuario: " + usuario.Nombre + " " + usuario.Apellidos + "\n" + "Proyectos: \n" + p1.Nombre + ": " + r1.Nombre + "\n" + p2.Nombre + ": " + r2.Nombre;
 
             Assert.AreEqual(cadena, app.ToString());
         }
@@ -185,7 +223,7 @@ namespace ModeloDatosTest
         {
             Assert.IsNotNull(app);
 
-            Assert.IsNull(app.Proyectos);
+           
             app.agregarProyecto(p1);
             Assert.IsNotNull(app.Proyectos);
 
@@ -200,7 +238,7 @@ namespace ModeloDatosTest
             Assert.AreEqual(2, app.ProyectosYSusRoles(p1));
 
             app.agregarRolProyecto(p2, r2);
-            Assert.AreEqual(1, app.ProyectosYSusRoles(p1));
+            Assert.AreEqual(1, app.ProyectosYSusRoles(p2));
 
         }
 
