@@ -84,6 +84,7 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppTest.cs" />
     <Compile Include="ProyectoTest.cs" />
     <Compile Include="RolTest.cs" />
     <Compile Include="UsuarioTest.cs" />
